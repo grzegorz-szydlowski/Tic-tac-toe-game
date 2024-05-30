@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller">
+   <children>
+      <ImageView fx:id="bgImg1" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../images/ttcBackground.png" />
+         </image></ImageView>
+      <Button fx:id="btnPlay" layoutX="251.0" layoutY="177.0" mnemonicParsing="false" onAction="#PlayBtnClick" text="PLAY" textAlignment="CENTER">
+         <font>
+            <Font name="Bell MT" size="25.0" />
+         </font></Button>
+      <Text fx:id="txtResult" fill="#d80e0e" layoutX="123.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X has won!" textAlignment="CENTER" visible="false" wrappingWidth="355.0">
+         <font>
+            <Font name="Berlin Sans FB" size="55.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtOWins" fill="#c61717" layoutX="350.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="RIGHT" visible="false" wrappingWidth="235.0">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtXWins" fill="#c61717" layoutX="15.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" wrappingWidth="235.0">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font></Text>
+      <AnchorPane fx:id="pnlBoard" layoutX="125.0" layoutY="25.0" prefHeight="350.0" prefWidth="350.0" styleClass="white-background" stylesheets="@../../../stylesheets/whitePanel.css" visible="false" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="125.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <Line endX="250.0" layoutX="100.0" layoutY="116.0" startX="-100.0" strokeWidth="5.0" />
+            <Line endX="250.0" layoutX="100.0" layoutY="234.0" startX="-100.0" strokeWidth="5.0" />
+            <Line endX="69.0" endY="282.0" layoutX="165.0" layoutY="67.0" startX="69.0" startY="-68.0" strokeWidth="5.0" />
+            <Line endX="-59.0" endY="270.0" layoutX="175.0" layoutY="80.0" startX="-59.0" startY="-80.0" strokeWidth="5.0" />
+            <Button fx:id="btn1" alignment="CENTER" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Btn1Click" prefHeight="90.0" prefWidth="90.0">
+            <graphic>
+               <ImageView fx:id="img1">
+
+               </ImageView>
+            </graphic>
+            </Button>
+            <Button fx:id="btn4" alignment="CENTER" layoutX="14.0" layoutY="130.0" mnemonicParsing="false" onAction="#Btn4Click" prefHeight="90.0" prefWidth="90.0">
+            <graphic>
+               <ImageView fx:id="img4">
+
+               </ImageView>
+            </graphic>
+            </Button>
+            <Button fx:id="btn7" alignment="CENTER" layoutX="14.0" layoutY="246.0" mnemonicParsing="false" onAction="#Btn7Click" prefHeight="90.0" prefWidth="90.0">
+               <graphic>
+                  <ImageView fx:id="img7">
+
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn5" alignment="CENTER" layoutX="130.0" layoutY="130.0" mnemonicParsing="false" onAction="#Btn5Click" prefHeight="90.0" prefWidth="90.0">
+               <graphic>
+                  <ImageView fx:id="img5">
+
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn6" alignment="CENTER" layoutX="246.0" layoutY="129.0" mnemonicParsing="false" onAction="#Btn6Click" prefHeight="90.0" prefWidth="90.0">
+               <graphic>
+                  <ImageView fx:id="img6">
+
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn3" alignment="CENTER" layoutX="246.0" layoutY="14.0" mnemonicParsing="false" onAction="#Btn3Click" prefHeight="90.0" prefWidth="90.0">
+               <graphic>
+                  <ImageView fx:id="img3">
+
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn2" alignment="CENTER" layoutX="130.0" layoutY="14.0" mnemonicParsing="false" onAction="#Btn2Click" prefHeight="90.0" prefWidth="90.0">
+               <graphic>
+                  <ImageView fx:id="img2">
+
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn8" alignment="CENTER" layoutX="130.0" layoutY="246.0" mnemonicParsing="false" onAction="#Btn8Click" prefHeight="90.0" prefWidth="90.0">
+               <graphic>
+                  <ImageView fx:id="img8">
+
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn9" alignment="CENTER" layoutX="246.0" layoutY="246.0" mnemonicParsing="false" onAction="#Btn9Click" prefHeight="90.0" prefWidth="90.0">
+               <graphic>
+                  <ImageView fx:id="img9">
+
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
